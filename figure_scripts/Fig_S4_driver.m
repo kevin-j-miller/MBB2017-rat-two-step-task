@@ -31,3 +31,23 @@ ylim([0.4, 1.2])
 xlabel('Common Transition')
 ylabel('Uncommon Transition')
 set(gca,'fontsize',14)
+
+figure; hold on
+title('Common Transition')
+line([0, 5], [0, 5], 'color', [0.5, 0.5, 0.5])
+scatter(median_c2s2_better_common, median_c2s2_worse_common, 50, 'x', 'linewidth', 2)
+xlim([0.4, 1.2])
+ylim([0.4, 1.2])
+xlabel('High-Reward Outcome Port')
+ylabel('Low-Reward Outcome Port')
+set(gca,'fontsize',14)
+
+figure; hold on
+title('Uncommon Transition')
+line([0, 5], [0, 5], 'color', [0.5, 0.5, 0.5])
+scatter(median_c2s2_better_uncommon, median_c2s2_worse_uncommon, 50, 'x', 'linewidth', 2)
+xlim([0.4, 1.2])
+ylim([0.4, 1.2])
+xlabel('High-Reward Outcome Port')
+ylabel('Low-Reward Outcome Port')
+set(gca,'fontsize',14)
